@@ -7,5 +7,5 @@ class Resturant (models.Model):
     description = models.TextField()
     opening_time = models.TimeField()
     closing_time = models.TimeField()
-    created_at = models.DateTimeField(default=datetime.now())
+    created_at = models.DateTimeField(auto_now_add = True)
 
